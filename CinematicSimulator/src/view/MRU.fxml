@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MRUController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" layoutX="-1.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/MRU.jpg" />
+         </image>
+      </ImageView>
+      <TextField layoutX="15.0" layoutY="226.0" prefHeight="25.0" prefWidth="191.0" fx:id="xoTxt">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></TextField>
+      <TextField layoutX="15.0" layoutY="278.0" prefHeight="25.0" prefWidth="191.0" fx:id="xTxt" />
+      <TextField fx:id="vTxt" layoutX="15.0" layoutY="350.0" prefHeight="25.0" prefWidth="191.0" />
+      <TextField fx:id="tTxt" layoutX="15.0" layoutY="402.0" prefHeight="25.0" prefWidth="191.0" />
+      <Button fx:id="calcButton" layoutX="17.0" layoutY="522.0" mnemonicParsing="false" onAction="#goMRUSol" opacity="0.01" prefHeight="40.0" prefWidth="182.0" />
+      <LineChart fx:id="lineChart" animated="false" axisSortingPolicy="NONE" createSymbols="false" layoutX="253.0" layoutY="375.0" legendVisible="false" prefHeight="190.0" prefWidth="401.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="yAxis" side="LEFT" tickLabelsVisible="false" tickMarkVisible="false" />
+        </yAxis>
+      </LineChart>
+      <Button fx:id="exitButton" layoutX="742.0" layoutY="14.0" mnemonicParsing="false" onAction="#exit" opacity="0.01" prefHeight="40.0" prefWidth="40.0" />
+      <Button fx:id="backButton" layoutX="12.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" opacity="0.01" prefHeight="40.0" prefWidth="40.0" />
+      <Label alignment="CENTER" layoutX="654.0" layoutY="394.0" prefHeight="40.0" prefWidth="134.0" textAlignment="CENTER" fx:id="xoLabel">
+         <font>
+            <Font name="Century Gothic" size="23.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="654.0" layoutY="452.0" prefHeight="32.0" prefWidth="134.0" textAlignment="CENTER" fx:id="xLabel">
+         <font>
+            <Font name="Century Gothic" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="vLabel" alignment="CENTER" layoutX="654.0" layoutY="498.0" prefHeight="32.0" prefWidth="134.0" textAlignment="CENTER">
+         <font>
+            <Font name="Century Gothic" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="tLabel" alignment="CENTER" layoutX="654.0" layoutY="550.0" prefHeight="32.0" prefWidth="134.0" textAlignment="CENTER">
+         <font>
+            <Font name="Century Gothic" size="23.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="224.0" layoutY="287.0" prefHeight="32.0" prefWidth="58.0" textAlignment="CENTER" fx:id="xoLabel1">
+         <font>
+            <Font name="Century Gothic" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="742.0" layoutY="287.0" prefHeight="32.0" prefWidth="58.0" textAlignment="CENTER" fx:id="xLabel1">
+         <font>
+            <Font name="Century Gothic" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="moto" fitHeight="90.0" fitWidth="76.0" layoutX="230.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/moto.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

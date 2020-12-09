@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/Menu.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="mruButton" layoutX="541.0" layoutY="162.0" mnemonicParsing="false" onAction="#goMRU" opacity="0.01" prefHeight="76.0" prefWidth="220.0" text=" " />
+      <Button fx:id="mruaButton" layoutX="541.0" layoutY="273.0" mnemonicParsing="false" onAction="#goMRUA" opacity="0.01" prefHeight="55.0" prefWidth="226.0" />
+      <Button fx:id="MPButton" layoutX="541.0" layoutY="480.0" mnemonicParsing="false" onAction="#goMP" opacity="0.01" prefHeight="55.0" prefWidth="226.0" />
+      <Button fx:id="CLButton" layoutX="541.0" layoutY="369.0" mnemonicParsing="false" onAction="#GoCL" opacity="0.01" prefHeight="76.0" prefWidth="168.0" />
+      <Button fx:id="exitButton" layoutX="743.0" layoutY="14.0" mnemonicParsing="false" onAction="#exit" opacity="0.01" prefHeight="39.0" prefWidth="41.0" />
+   </children>
+</AnchorPane>
